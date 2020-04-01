@@ -21,4 +21,3 @@ Topics I *might* cover in this blog:
 
 Feel free to contact me on [LinkedIn](https://www.linkedin.com/in/runesperre/) or [Twitter](https://twitter.com/Sperre)! 
 
-Test
