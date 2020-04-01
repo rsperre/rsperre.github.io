@@ -28,9 +28,11 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://blog.sperre.org" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: sperre
 github_username:  rsperre
+google_analytics: UA-162429518-1
 author: "Rune Sperre"
 # Build settings
 theme: minima
+
 plugins:
   - jekyll-feed
 
