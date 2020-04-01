@@ -36,6 +36,8 @@ This will add two buttons to a list. The first one will start the defined flow w
 
 ![Custom buttons!](/images/customaction-01.png)
 
-This works just fine in the standard view, when sorting and filtering. However, if we filter the list by searching, the first button stops working. The second one still works.
+This works just fine in the standard view and when sorting and filtering. However, if we filter the list by searching, the first button stops working. The second one still works as expected.
+
+![Custom buttons!](/images/customaction-02.png)
 
 I will investigate this further, but I do not think this is something that end users can fix themselves.
