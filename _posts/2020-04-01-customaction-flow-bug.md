@@ -3,7 +3,7 @@ layout: post
 title:  "Strange problem with executeFlow in customRowAction"
 author: "Rune Sperre"
 date:   2020-04-01 07:00:00 +0200
-categories: Bug
+tags: [Bugs, Flow, Power Automate, JSON]
 ---
 
 Came across this strange problem. 
