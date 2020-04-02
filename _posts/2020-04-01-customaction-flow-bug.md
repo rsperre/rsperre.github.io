@@ -10,7 +10,7 @@ Came across this strange problem.
 You can add buttons to your lists that will start a flow for the item using JSON column formatting. That is quite cool and useful, but there is a strange bug when you filter the list by searcing.
 
 **Example**
-````
+```json
 {
   "elmType": "div",
   "children": [
@@ -31,7 +31,7 @@ You can add buttons to your lists that will start a flow for the item using JSON
     }
   ]
 }
-````
+```
 This will add two buttons to a list. The first one will start the defined flow with the id specified in `actionParams`, the second will open the item using the default click action:
 
 ![Custom buttons!](/images/customaction-01.png)
