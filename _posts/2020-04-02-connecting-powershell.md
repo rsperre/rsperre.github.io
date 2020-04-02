@@ -8,18 +8,18 @@ tags: [PnP, PowerShell, SharePoint]
 
 # Authentication
 
-When connecting with `Connect-PnPOnline` we have some options on how to supply our credentials. As I use this command quite often it is nice to save some time when it comes to authenticating. These are the ones I use most of the time.
+When connecting with `Connect-PnPOnline` we have some options on how to supply our credentials. As I am using this command quite often it is nice to be able to save a few seconds each time. These are the ones I find myself using most of the time.
 
 ## Password prompt
 Well. That's basically the same you get if you do not supply anything for `-Credentials` at all...  
-I am including it here because some times it can be useful if this is in a script that different people in a team will be using and need to use their own credentials.
+I am including it here because it can be useful in a script that different people in a team will be using, and need to use their own credentials.
 ```powershell
 $credentials = Get-Credential
 Connect-PnPOnline -Credentials $credentials -Url https://tenant.sharepoint.com/sites/demo
 ```
 
 ## Managed Credentials (Windows)
-This is my go-to method for authenticating on the fly. In Credential Manager I have defined a number of generic credentials that I can use to authenticate without getting a login window. This makes it easy to swich between my dev tenant and different live environments. Just give the credential a name that is easy to remember:
+This is my go-to method for authenticating on the fly. In Credential Manager I have defined a number of generic credentials that I can use without getting a login window. This makes it easy to swich between my dev tenant and different live environments. Just give the credential a name that is easy to remember:
 
 ![Credential Manager](/images/20200402-auth01.png)
 
@@ -28,7 +28,7 @@ Then this name can be used directly in your connection:
 Connect-PnPOnline -Credentials MyDevEnvironment -Url https://mydevenvironment.sharepoint.com/sites/demo
 ```
 ## SharePoint AppId / AppSecret
-Useful in its own way, it has the benefit of leaving your (admin) account name away from modified information and such. 
+Useful in its own way, it has the benefit of leaving your (admin) account name away from modified information and such, so noone knows who to blame! This can also be useful in an Azure Function, just be sure to protect the Id/Secret using the key vault or similar.
 
 ![SharePoint AppId](/images/20200402-auth02.png)
 
@@ -44,4 +44,4 @@ Connect-PnPOnline -AppId $appid -AppSecret $appsecret -Url $url
 ```
 
 `Connect-PnPOnline` has quite a few other options for authenticating as well, I have covered the ones I find most useful for day-to-day operations.  
-The full documentation of options be found here: https://docs.microsoft.com/en-us/powershell/module/sharepoint-pnp/connect-pnponline
+The full documentation of options be found here: [https://docs.microsoft.com/en-us/powershell/module/sharepoint-pnp/connect-pnponline](https://docs.microsoft.com/en-us/powershell/module/sharepoint-pnp/connect-pnponline)
