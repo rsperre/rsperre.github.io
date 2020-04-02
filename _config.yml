@@ -32,7 +32,12 @@ google_analytics: UA-162429518-1
 author: "Rune Sperre"
 # Build settings
 theme: minima
-
+minima:
+    skin: solarized
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
 plugins:
   - jekyll-feed
 

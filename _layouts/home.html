@@ -9,7 +9,7 @@ layout: default
 
   {{ content }}
 
-
+  
   {% if site.paginate %}
     {% assign posts = paginator.posts %}
   {% else %}
@@ -32,7 +32,7 @@ layout: default
           </a>
           {%- assign tags = post.tags -%}
           {%- for tag in tags -%}
-          <span>{{tag}} </span>
+          <span class="post-tag">{{tag}} </span>
           {%- endfor -%}
         </h3>
         {%- if site.show_excerpts -%}
