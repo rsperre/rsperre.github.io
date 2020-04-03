@@ -12,10 +12,15 @@ Working as a SharePoint developer/consultant/advisor/architect since 2009, these
 
 Contributing to the [SharePoint Developer Community](http://aka.ms/sppnp), so should you!
   
-Topics I *might* cover in this blog:
+I also try to help out at [SharePoint StackExchange](https://sharepoint.stackexchange.com/), some of my posts will be longer versions of answers provided there.
+
+
+Examples of topics I *might* want to touch in this blog:
   * SharePoint Framework (SPFx)
   * Azure Functions
   * PowerShell
+  * List formatting
+
 
 ---
 
