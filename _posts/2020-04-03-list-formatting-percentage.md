@@ -69,3 +69,32 @@ Heres the needed JSON to do just that:
   ]
 }
 ```
+
+### How this works
+
+- First we add a `span` element with a red background 
+color.
+- We add another `span` as a child, with [operators](https://docs.microsoft.com/en-us/sharepoint/dev/declarative-customization/column-formatting#operators) to decide the background color and width of the element. 
+- The same logic is used to set the foreground color to be black or white to increase readability.
+
+To construct this kind of logic, we use the syntax:
+   
+```json
+"property": {
+  "operator": "?",
+  "operands": [
+    {
+      "operator": "<",
+      "operands": [
+        0, 1
+      ]
+    },
+    "true",
+    "false"
+  ]
+}
+````
+This would translate to:
+```typescript
+var property = (0 < 1) ? "true" : "false";
+```
