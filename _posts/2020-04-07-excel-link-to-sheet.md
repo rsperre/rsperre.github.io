@@ -28,6 +28,6 @@ For both of these, if we add **&ActiveCell=Sheetname** it will  open the sheet w
 ````
 https://yourtenant.sharepoint.com/:x:/s/sitename/EaPm6BD3KkVJvwjuzQdOrcEBR2YOqbFUWn22YGyL26cMKQ?e=8y1CEl&ActiveCell=Sheet2!C3
 ````
-![ActiveCell](/images/20200407-Excel.png)
+![ActiveCell](/images/20200407-excel.png)
 
 Pretty neat!
