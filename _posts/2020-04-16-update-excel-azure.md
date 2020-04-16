@@ -61,7 +61,7 @@ Since we are using two modules here, PnP PowerShell and ImportExcel, we need to 
 
 ![](/images/2020-04-16/2020-04-16-22-05-22.png)
 
-I've found the easiest way to get these is by using the `Export-Module` command in PowerShell, for example: 
+I've found the easiest way to get these is by using the `Save-Module` command in PowerShell, for example: 
 
 ```powershell
 Save-Module -Name SharePointPnPPowerShellOnline -Path c:\temp
