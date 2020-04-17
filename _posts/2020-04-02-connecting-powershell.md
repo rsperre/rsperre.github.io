@@ -10,6 +10,16 @@ tags: [PnP, PowerShell, SharePoint]
 
 When connecting with `Connect-PnPOnline` we have some options on how to supply our credentials. As I am using this command quite often it is nice to be able to save a few seconds each time. These are the ones I find myself using most of the time.
 
+
+## Azure AD App Authentication
+In the april 2020 update of PnP PowerShell a new command was included to make the process of setting up an Azure AD App with certificate for authentication a whole lot easier. With the certificate in place, we connect like this:
+
+```powershell
+Connect-PnPOnline -Url https://mytenant.sharepoint.com -Tenant mytenant.onmicrosoft.com -ClientId 2cd1ff5a-dc9d-4ff5-813b-fdc5effff6b8 -Thumbprint C3CA6F5F7B33CB4908FDCFFEE9060A26FEB52648
+```
+
+See also my post: [Azure AD App authentication in PnP PowerShell](/2020/04/17/azure-ad-app-authentication.html).
+
 ## Password prompt
 Well. That's basically the same you get if you do not supply anything for `-Credentials` at all...  
 I am including it here because it can be useful in a script that different people in a team will be using, and need to use their own credentials.
