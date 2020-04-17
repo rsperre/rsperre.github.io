@@ -72,6 +72,10 @@ And this is how it looks in SharePoint:
 
 ---
 
+### Use the certificate in an Azure Function
+It was a good thing I ended up outputting the cerficiate to disk. Check my post on [Azure App Authentication in an Azure Function](/2020/04/17/azure-ad-app-authentication.html) on how to use the same certificate in a function!
+
+---
 ### Final thoughts
 
 This makes the process of setting up an Azure AD App for authentication a whole lot easier. You don't have to generate a certificate or remember which permissions to grant the app.
@@ -84,6 +88,6 @@ Just remember to set a reminder for 10 years when the certificate expires!
 
 ---
 
-Here is another post I made on other ways of connecting using `Connect-PnPOnline`:  
+Here is another post I made on other ways of connecting to Office 365 using `Connect-PnPOnline`:  
 [Supplying credentials for Connect-PnPOnline](/2020/04/02/connecting-powershell.html)
 
