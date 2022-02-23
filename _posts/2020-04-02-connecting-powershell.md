@@ -50,7 +50,7 @@ $appid = "293e3320-2776-45e6-98e3-ff6c27a95b2f"
 $appsecret = "oghiSf2QbTOL1ei3ZjQmHjogOjhuRnoNK2zeivcScO0="
 $url = "https://mydevenvironment.sharepoint.com/sites/demo"
 
-Connect-PnPOnline -AppId $appid -AppSecret $appsecret -Url $url
+Connect-PnPOnline -ClientId $appid -ClientSecret $appsecret -Url $url
 ```
 
 `Connect-PnPOnline` has quite a few other options for authenticating as well, I have covered the ones I find most useful for day-to-day operations.  
