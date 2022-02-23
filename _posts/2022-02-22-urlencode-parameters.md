@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Strange problem with executeFlow in customRowAction"
+title:  "Get-PnPMicrosoft365Group - Invalid filter clause"
 author: "Rune Sperre"
 date:   2022-02-22 22:22:22 +0200
 tags: [PnP, PowerShell]
