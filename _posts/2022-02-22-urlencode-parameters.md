@@ -3,7 +3,7 @@ layout: post
 title:  "Get-PnPMicrosoft365Group - Invalid filter clause"
 author: "Rune Sperre"
 date:   2022-02-22 22:22:22 +0200
-tags: [PnP, PowerShell]
+tags: [PnP, PowerShell, Graph]
 ---
 
 Are you getting errors trying to retrieve a Microsoft 365 group using PnP PowerShell? The identity you are using might contain characters that will break the filter string being passed to Microsoft Graph (in this example, the ampersand (&)):
@@ -25,3 +25,6 @@ $name = "People & Places"
 $group = Get-PnPMicrosoft365Group -Identity ([System.Web.HttpUtility]::UrlEncode($name))
 ```
 This will turn "People & Places" into "People+%26+Places".
+
+The problem can be clearly seen if we translate it to a direct Graph API call:
+`https://graph.microsoft.com/v1.0/groups?$filter=displayName eq 'People & Places'`
