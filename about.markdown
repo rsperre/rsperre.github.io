@@ -7,7 +7,7 @@ permalink: /about/
 **Rune Sperre**  
 
 ---
-Senior Software Engineer for [Sopra Steria](https://www.soprasteria.no/) in Stavanger, Norway.  
+Microsoft 365 Developer for Innovation Norway in Stavanger, Norway.  
 Working as a SharePoint developer/consultant/advisor/architect since 2009, these days almost exclusivly in Office 365 and SharePoint Online. 
 
 Contributing to the [SharePoint Developer Community](http://aka.ms/sppnp), so should you!
